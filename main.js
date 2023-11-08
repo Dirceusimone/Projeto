@@ -1,18 +1,16 @@
-const aplausos = document.querySelector("#som_tecla_aplausos");
-
-let controle="tocar"
-
-if(controle=="tocar"){
-    alert("audio pronto para tocar")
-}else {
-    alert("o audio nao esta pronto")
+function tocaSom(idElementoAudio){
+    document.querySelector(idElementoAudio).play();
 }
 
-function tocaSom(som){
-    alert(som)
-}
+const listaDeTeclas = document.querySelectorAll(".tecla");
 
-tocaSom("clap, clap, clap")
-
+let contador = 0;
+while(contador < listaDeTeclas.length){    
+    const Tecla = listaDeTeclas{contador};
+    const idAudio = "#som_"+efeito;
+    Tecla.onclick = function (){
+        tocaSom(idAudio);
+    }
+    contador = contador + 1;
 
 
